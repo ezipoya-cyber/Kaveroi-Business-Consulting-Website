@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Kaveroi Business Consulting</title>
+    <link rel="icon" type="png" href="KEVAROI LOGO FINAL.png">
+
+    <style>
+        .main_outline {
+            display: grid; 
+            grid-template-columns: 1fr 4fr;
+            text-decoration: none;
+            background-color: white;
+        }
+
+        .logo {
+            display: grid;
+            width: 30%;
+            background-color: white;
+            
+           
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 30px;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+        }
+
+        .navbar a {
+         text-decoration: none;
+        }
+
+        .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 10px 12px 0;
+    display: grid;
+}
+
+.slide {
+    display: none;
+    align-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    margin-top: 18px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    padding: 16px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    user-select: all;
+}
+
+.next {
+    right: 0;    
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.caption {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: larger;
+}
+
+.welcome_text {
+    display: grid;
+   
+}
+
+.kbc {
+    background-color: rgb(240, 229, 195);
+    margin-left: 10px;
+}
+
+footer {
+    font-size: 15px;;
+    margin-left: 10px;
+}
+    </style>
+
+</head>
+<body> 
+
+    <div class = "kbc"> 
+        <header> <nav>
+    <div class="main_outline">
+        
+            <img class = "logo" src ="KEVAROI LOGO 2_JPG.jpg">
+        
+        <div class = "navbar">
+            <a href="about.html" target="_blank">About</a>
+            <a href="services.html" target="_blank">Services</a>
+            <a href="clients.html" target="_blank">Clients</a>
+            <a href="contactus.html" target ="_blank">Contact Us</a>
+        </div>
+    </div></nav></header>
+    <div class="caption"> 
+        <p class="welcome_text"> Welcome to Kaveroi Business Consulting! <br><br>
+
+At Kaveroi Business Consulting (KBC), we are committed to helping individuals, entrepreneurs, and businesses navigate the complexities of business registration, taxation, and compliance with confidence.
+
+Our mission is to provide reliable, efficient, and professional business support services that empower our clients to focus on what they do best—growing their businesses.<br><br> From IPA business registration and renewals to IRC tax services, TIN certificates, business account opening assistance, business profiles, logos, and regulatory compliance, KBC is your trusted partner every step of the way.
+
+We believe that every successful business starts with a strong foundation. Let us help you build yours.
+
+<br><br>Your Success, Our Commitment.<br><br>
+
+Contact us today and let KBC simplify your business journey.
+ </p>
+<section class="slideshow-container">
+
+    <div class="slide fade">
+        <img src="1.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="2.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="3.jpg" style="width:100%">
+    </div>
+
+    <!-- Previous Button -->
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+
+    <!-- Next Button -->
+    <a class="next" onclick="changeSlide(1)">❯</a>
+
+</section>
+    
+
+    </div>
+    
+    </div>
+    <footer>
+        Copyright 2026 &#169;. All rights reserved.
+    </footer>
+
+    <script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 4000);
+}
+
+alert("Welcome on board");
+
+</script>
+    
+</body>
+</html>

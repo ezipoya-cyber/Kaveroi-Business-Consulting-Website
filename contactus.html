@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kaveroi Business Consulting</title>
+    <link rel="icon" type="png" href="KEVAROI LOGO FINAL.png">
+
+<style>
+
+.main_outline {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: lightgray;
+}
+
+.logo {
+    display: block;
+    width: 30%;
+}
+
+.logo-container {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 30px;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.nbars:hover {
+            opacity: 60%;
+
+        }
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+.kbc {
+    margin-left: 10px;
+}
+
+
+
+
+.contact-container h1 {
+    color: black;
+}
+
+.contact-info {
+    margin-bottom: 25px;
+    font-size: larger;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 98.6%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+footer {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.all-outline {
+    background-color: rgb(240, 235, 235);
+}
+
+.contact-us {
+    background-color: rgb(240, 235, 235);
+}
+
+.office-location {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.office-location h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.office-location p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.map-container {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+
+.socials{
+    display: grid;
+    width: 30px; 
+
+}
+
+.socials:hover {
+    opacity: 70%;
+} 
+
+.socials:active {
+    opacity: 50%;
+}
+
+.footer-details {
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 1fr;
+    column-gap: 50px;
+   
+    align-items: center;
+    margin: -18px 0px 10px 10px;
+    border-bottom: 10px;
+    
+}
+
+.copyright {
+    text-align: end;
+    color: rgb(138, 135, 135);
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="kbc">
+
+<header>
+<nav>
+<div class="main_outline">
+
+    <div class="logo-container">
+        <img class="logo" src="KBC updated logo2.png">
+    </div>
+
+    <div class = "navbar">
+            <a class = "nbars" href="about.html" target="_blank">About</a>
+            <a class = "nbars" href="services.html" target="_blank">Services</a>
+            <a class = "nbars" href="clients.html" target="_blank">Clients</a>
+            <a class = "nbars" href="contactus.html" target ="_blank">Contact Us</a>
+        </div>
+
+</div>
+</nav>
+</header>
+
+<div class="contact-container">
+
+    <h1 class="contact-us">Contact Us</h1>
+
+    <div class="all-outline">
+    <div class="contact-info">
+        <p class="contact-caption">
+            At Kaveroi Business Consulting, we are committed to helping
+            businesses and individuals achieve their goals.
+            Send us your enquiry and our team will get back to you.
+        </p>
+
+        <p><strong>Email:</strong> kaveroibc@gmail.com</p>
+        <p><strong>Phone:</strong> +675 74785384</p>
+        <p><strong>Office Location:</strong> Stall #103, First floor, Garden City Building, Boroko, Port Moresby, Papua New Guinea</p>
+    </div>
+
+    <form>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <label for="business">Business / Organization</label>
+        <input type="text" id="business" placeholder="Business or organization name">
+
+        <label for="service">Service Required</label>
+        <select id="service">
+            <option>IPA Registration</option>
+            <option>TIN Registration</option>
+            <option>Taxation Services</option>
+            <option>Business Profile</option>
+            <option>Company Profile</option>
+            <option>Logo Design</option>
+            <option>Tender Documentation</option>
+            <option>Other</option>
+        </select>
+
+        <label for="message">Your Request / Enquiry</label>
+        <textarea id="message" rows="8"
+        placeholder="Please tell us how we can assist you..."></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+
+    </form>
+</div>
+</div>
+
+<section class="office-location">
+
+    <h2>Visit Our Office</h2>
+
+    <p>
+        <strong>Kaveroi Business Consulting</strong><br>
+        We welcome clients and business partners to visit our office during business hours.
+    </p>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d347.853235009018!2d147.19678501974963!3d-9.4642827911346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spg!4v1781444336314!5m2!1sen!2spg"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</section>
+
+ <footer>
+
+    
+
+   <div class="footer-details">
+
+
+        <div>
+            <a href="https://www.facebook.com/YourPage"
+           target="_blank">
+            <b class="facebook-icon"><img class = "socials" src = "facebook.png"> </b>
+        </a>
+        </div>
+
+        <div>
+        <a href="https://wa.me/67578667980"
+           target="_blank">
+            <i class="whatsapp-icon"><img class = "socials" src = "whatsapp.png"> </i>
+        </a>
+        </div>
+
+        <div>
+        <a href="https://www.linkedin.com/company/hamata-business-consulting"
+           target="_blank">
+            <i class="linked-icon"><img class = "socials" src = "linkedin.png"> </i>
+        </a>
+        </div>
+
+        <div>
+        <a href="https://www.tiktok.com/@youraccount"
+           target="_blank">
+            <i class="tiktok-icon"> <img class = "socials" src = "tik-tok.png"> </i>
+        </a>
+        </div>
+
+
+
+    
+    <div> 
+        <p class = "copyright"> &copy; 2026 Kaveroi Business Consulting. All Rights Reserved.</p>
+    </div>
+    
+</div>
+
+   </div>
+</footer>
+
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</div>
+
+</body>
+</html>
+

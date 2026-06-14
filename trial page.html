@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST- Kaveroi Business Consulting</title>
+    <link rel="icon" type="png" href="KEVAROI LOGO FINAL.png">
+
+    <style>
+        .main_outline {
+            display: grid; 
+            grid-template-columns: 1fr 4fr;
+            text-decoration: none;
+            background-color: white;
+        }
+
+        .logo {
+            display: grid;
+            width: 30%;
+            background-color: white;
+            
+           
+        }
+
+        .balloon {
+    position: absolute;
+    font-size: 30px;
+    animation: floatUp 4s linear forwards;
+    pointer-events: none;
+        }
+
+        @keyframes floatUp {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, -250px);
+        opacity: 0;
+    }
+}
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 30px;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+        }
+
+        .navbar a {
+         text-decoration: none;
+        }
+
+        .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 10px 12px 0;
+    display: grid;
+}
+
+.slide {
+    display: none;
+    align-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    margin-top: 18px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    padding: 16px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    user-select: all;
+}
+
+.next {
+    right: 0;    
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.caption {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: larger;
+}
+
+.welcome_text {
+    display: grid;
+   
+}
+
+.kbc {
+    background-color: rgb(240, 229, 195);
+    margin-left: 10px;
+}
+
+footer {
+    font-size: 15px;;
+    margin-left: 10px;
+}
+
+footer{
+    background: #a7afb9;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.social-icons{
+    margin-bottom: 15px;
+}
+
+.social-icons a{
+    color: white;
+    font-size: 28px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: gold;
+    transform: scale(1.2);
+}
+
+    </style>
+
+</head>
+
+
+<body> 
+
+    <div class = "kbc"> 
+        <header> <nav>
+    <div class="main_outline">
+        <div class="logo-container">
+<img class = "logo" src ="KEVAROI LOGO 2_JPG.jpg">
+        </div>
+            
+        
+        <div class = "navbar">
+            <a href="about.html" target="_blank">About</a>
+            <a href="services.html" target="_blank">Services</a>
+            <a href="clients.html" target="_blank">Clients</a>
+            <a href="contactus.html" target ="_blank">Contact Us</a>
+        </div>
+    </div></nav></header>
+    <div class="caption"> 
+        <p class="welcome_text"> Welcome to Kaveroi Business Consulting! <br><br>
+
+At Kaveroi Business Consulting (KBC), we are committed to helping individuals, entrepreneurs, and businesses navigate the complexities of business registration, taxation, and compliance with confidence.
+
+Our mission is to provide reliable, efficient, and professional business support services that empower our clients to focus on what they do best—growing their businesses.<br><br> From IPA business registration and renewals to IRC tax services, TIN certificates, business account opening assistance, business profiles, logos, and regulatory compliance, KBC is your trusted partner every step of the way.
+
+We believe that every successful business starts with a strong foundation. Let us help you build yours.
+
+<br><br>Your Success, Our Commitment.<br><br>
+
+Contact us today and let KBC simplify your business journey.
+ </p>
+<section class="slideshow-container">
+
+    <div class="slide fade">
+        <img src="1.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="2.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="3.jpg" style="width:100%">
+    </div>
+
+    <!-- Previous Button -->
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+
+    <!-- Next Button -->
+    <a class="next" onclick="changeSlide(1)">❯</a>
+
+</section>
+    
+
+    </div>
+    
+    </div>
+   <footer>
+
+    <div class="social-icons">
+
+        <a href="https://www.facebook.com/Kaveroi Business Consulting"
+           target="_blank">
+            <i class="fab fa-facebook-f">F</i>
+        </a>
+
+        <a href="https://wa.me/67578667980"
+           target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/HamataBusinessConsulting"
+           target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@kaveroibusinessconsulting"
+           target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+    </div>
+
+    <p>&copy; 2026 Kaveroi Business Consulting. All Rights Reserved.</p>
+
+</footer>
+
+    <script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 4000);
+}
+
+</script>
+
+<script>
+
+const logo = document.querySelector(".logo-container");
+
+function createBalloon() {
+
+    const balloon = document.createElement("div");
+    balloon.className = "balloon";
+
+    const balloons = ["🎈", "🎉", "🎊"];
+    balloon.innerHTML = balloons[Math.floor(Math.random() * balloons.length)];
+
+    balloon.style.left = Math.random() * 80 + "px";
+    balloon.style.top = "50px";
+
+    logo.appendChild(balloon);
+
+    setTimeout(() => {
+        balloon.remove();
+    }, 4000);
+}
+
+// Release a balloon every 2 seconds
+setInterval(createBalloon, 2000);
+
+</script>
+    
+</body>
+</html>

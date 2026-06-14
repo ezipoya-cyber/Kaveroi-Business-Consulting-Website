@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Kaveroi Business Consulting</title>
+    <link rel="icon" type="png" href="KEVAROI LOGO FINAL.png">
+
+    <style>
+
+        
+        .main_outline {
+            display: grid; 
+            grid-template-columns: 1fr 4fr;
+            text-decoration: none;
+            background-color: lightgray;
+        
+          
+        }
+
+        .logo {
+            display: grid;
+            width: 30%;
+            background-color: lightgray;
+            
+           
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 30px;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(175, 29, 29);
+            background-color: lightgray;
+            
+        }
+
+        .nbars:hover {
+            opacity: 60%;
+
+        }
+
+        .navbar a {
+         text-decoration: none;
+        }
+
+        .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 10px 12px 0;
+    display: grid;
+}
+
+.slide {
+    display: none;
+    align-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    margin-top: 18px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    padding: 16px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    user-select: all;
+}
+
+.next {
+    right: 0;    
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.caption {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: larger;
+}
+
+.welcome_text {
+    display: grid;
+    font-size: 20px;;
+   
+}
+
+.Welcome {
+    font-size: 35px;
+   
+}
+
+.kbc {
+    background-color: rgb(248, 244, 244);
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+
+.socials{
+    display: grid;
+    width: 30px; 
+
+}
+
+.socials:hover {
+    opacity: 70%;
+} 
+
+.socials:active {
+    opacity: 50%;
+}
+
+.footer-details {
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 1fr;
+    column-gap: 50px;
+   
+    align-items: center;
+    margin: -18px 0px 10px 10px;
+    border-bottom: 10px;
+    
+}
+
+.copyright {
+    text-align: end;
+    color: rgb(138, 135, 135);
+}
+
+
+    </style>
+
+</head>
+<body> 
+
+    <div class = "kbc"> 
+        <header> <nav>
+    <div class="main_outline">
+        <div class="logo-container">
+            <img class = "logo" src ="KBC updated logo2.png">
+            </div>
+        
+        <div class = "navbar">
+            <a class = "nbars" href="about.html" target="_blank">About</a>
+            <a class = "nbars" href="services.html" target="_blank">Services</a>
+            <a class = "nbars" href="clients.html" target="_blank">Clients</a>
+            <a class = "nbars" href="contactus.html" target ="_blank">Contact Us</a>
+        </div>
+    </div></nav></header>
+    <div class="caption"> 
+        <p class="welcome_text"> <b class = "Welcome">Welcome to Kaveroi Business Consulting &#128522; </b> <br><br>
+
+At Kaveroi Business Consulting (KBC), we are committed to helping individuals, entrepreneurs, and businesses navigate the complexities of business registration, taxation, and compliance with confidence.
+
+Our mission is to provide reliable, efficient, and professional business support services that empower our clients to focus on what they do best—growing their businesses.<br><br> From IPA business registration and renewals to IRC tax services, TIN certificates, business account opening assistance, business profiles, logos, and regulatory compliance, KBC is your trusted partner every step of the way.
+
+We believe that every successful business starts with a strong foundation. Let us help you build yours.
+
+<br><br>Your Success, Our Commitment.<br><br>
+
+Contact us today and let KBC simplify your business journey.
+ </p>
+<section class="slideshow-container">
+
+    <div class="slide fade">
+        <img src="KBC 4.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="KBC 3.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="KBC 2.jpg" style="width:100%">
+    </div>
+
+     <div class="slide fade">
+        <img src="KBC 1.jpg" style="width:100%">
+    </div>
+
+    <!-- Previous Button -->
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+
+    <!-- Next Button -->
+    <a class="next" onclick="changeSlide(1)">❯</a>
+
+</section>
+    
+
+    </div>
+    
+    </div>
+
+    <br>
+
+    <footer>
+
+    
+
+   <div class="footer-details">
+
+
+        <div>
+            <a href="https://www.facebook.com/kaveroibusinessconsulting"
+           target="_blank">
+            <b class="facebook-icon"><img class = "socials" src = "facebook.png"> </b>
+        </a>
+        </div>
+
+        <div>
+        <a href="https://wa.me/67578667980"
+           target="_blank">
+            <i class="whatsapp-icon"><img class = "socials" src = "whatsapp.png"> </i>
+        </a>
+        </div>
+
+        <div>
+        <a href="https://www.linkedin.com/company/hamata-business-consulting"
+           target="_blank">
+            <i class="linked-icon"><img class = "socials" src = "linkedin.png"> </i>
+        </a>
+        </div>
+
+        <div>
+        <a href="https://www.tiktok.com/@kaveroibusinessconsulting"
+           target="_blank">
+            <i class="tiktok-icon"> <img class = "socials" src = "tik-tok.png"> </i>
+        </a>
+        </div>
+
+
+
+    
+    <div> 
+        <p class = "copyright"> &copy; 2026 Kaveroi Business Consulting. All Rights Reserved.</p>
+    </div>
+    
+</div>
+
+   </div>
+</footer>
+
+    <script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 4000);
+}
+
+</script>
+    
+</body>
+</html>
