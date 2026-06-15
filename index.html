@@ -8,50 +8,29 @@
 
     <style>
 
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Arial, sans-serif;
-}
         
         .main_outline {
-            display:grid;
-    grid-template-columns: 1fr 4fr;
-    align-items:center;
-    padding:10px;
-    gap:20px;
-    background-color:lightgray;
+            display: grid; 
+            grid-template-columns: 1fr 4fr;
+            text-decoration: none;
+            background-color: lightgray;
         
           
         }
 
         .logo {
-            display: grid;
             width:100%;
     max-width:150px;
     height:auto;
-            background-color: lightgray;
             
            
         }
 
         .navbar {
-            display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:15px;
-
-    font-size:22px;
-
-    text-align:center;
-
-    align-items:center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 15px;
+            align-items: center;
             text-decoration: none;
             color: rgb(175, 29, 29);
             background-color: lightgray;
@@ -80,16 +59,9 @@ body{
 }
 
 .slide img {
-    width: 100%;
     width:100%;
 
     height:auto;
-
-    max-height:400px;
-
-    object-fit:cover;
-    object-fit: cover;
-    margin-top: 18px;
 }
 
 .prev, .next {
@@ -114,26 +86,22 @@ body{
 }
 
 .caption {
-    display:grid;
+    display:flex;
 
-    grid-template-columns:
-    2fr 1fr;
+    flex-wrap:wrap;
 
     gap:20px;
-
-    padding:20px;
     font-size: larger;
 }
 
 .welcome_text {
     display: grid;
-    font-size:18px;
-    line-height:1.6;
+    font-size: 20px;;
    
 }
 
 .Welcome {
-    font-size:36px;
+    font-size: 35px;
    
 }
 
@@ -146,8 +114,7 @@ body{
 
 .socials{
     display: grid;
-    wwidth:35px;
-    height:auto; 
+    width: 30px; 
 
 }
 
@@ -160,17 +127,8 @@ body{
 }
 
 .footer-details {
-    display:grid;
-
-    grid-template-columns:
-    repeat(4,40px)
-    1fr;
-
-    gap:20px;
-
-    align-items:center;
-
-    padding:20px;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 1fr;
     column-gap: 50px;
    
     align-items: center;
@@ -184,7 +142,7 @@ body{
     color: rgb(138, 135, 135);
 }
 
-       
+
     </style>
 
 </head>
@@ -198,10 +156,10 @@ body{
             </div>
         
         <div class = "navbar">
-            <a class = "nbars" href="about.html" >About</a>
-            <a class = "nbars" href="services.html" >Services</a>
-            <a class = "nbars" href="clients.html" >Clients</a>
-            <a class = "nbars" href="contactus.html" >Contact Us</a>
+            <a class = "nbars" href="about.html" target="_blank">About</a>
+            <a class = "nbars" href="services.html" target="_blank">Services</a>
+            <a class = "nbars" href="clients.html" target="_blank">Clients</a>
+            <a class = "nbars" href="contactus.html" target ="_blank">Contact Us</a>
         </div>
     </div></nav></header>
     <div class="caption"> 
@@ -279,7 +237,7 @@ Contact us today and let KBC simplify your business journey.
         </div>
 
         <div>
-        <a href="https://www.tiktok.com/@kaveroi.business"
+        <a href="https://www.tiktok.com/@kaveroibusinessconsulting"
            target="_blank">
             <i class="tiktok-icon"> <img class = "socials" src = "tik-tok.png"> </i>
         </a>
@@ -289,7 +247,7 @@ Contact us today and let KBC simplify your business journey.
 
     
     <div> 
-        <p class = "copyright"> &copy; 2026 Kaveroi Business Consulting. All Rights Reserved.</p>
+        <p class = "copyright"> &copy; 2026 KBC</p>
     </div>
     
 </div>
